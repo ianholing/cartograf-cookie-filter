@@ -1,6 +1,10 @@
 <?php
 function cg_cf_cookie_bar(){
     $text = get_option('cg_cf_text');
+    
+    $comygo_police_page_id = get_option('comygo_police_page_id');
+	$text .= __('Puede cambiar la configuración u obtener más información') . " <a href=" . get_permalink($comygo_police_page_id) . ">" . __('aquí') . "</a>";
+	
     ?>
         <div id="cg_cookie_bar" class="<?php echo cg_cf_is_exception() ? 'exception' : '' ?>" data-timeout="<?php cg_cf_timeout();?>" data-scrollout="<?php cg_cf_scrollout();?>">
             <span class="close">&times;</span>
