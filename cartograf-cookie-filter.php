@@ -17,7 +17,7 @@ require_once('settings_page.php');
 register_activation_hook( __FILE__, 'cg_cf_activate' );
 function cg_cf_activate(){
 	if (get_option('cg_cf_accept_timeout')===FALSE){
-		update_option('cg_cf_text', 'Las cookies nos permiten ofrecer nuestros servicios. Al utilizar nuestros servicios, aceptas el uso que hacemos de las cookies. <a href="">Aceptar</a>');
+		update_option('cg_cf_text', 'Cookies let us offer our services, using this site you accept the use we made of cookies. <a href="">Aceptar</a>');
 		//~ update_option('cg_cf_head_accepted_code',       	'on');
 		//~ update_option('cg_cf_foot_accepted_code',       	'on');
 		//~ update_option('cg_cf_head_denied_code',       	'on');
